@@ -1,0 +1,86 @@
+<!-- Michael Bentz
+    CEN3031, Personal Page
+    August 31, 2015
+    Used Bootstrap and Materialize Frameworks-->
+
+
+<!-- resume.html contains a navbar, a centered resume.png and a footer-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <title>Michael Bentz</title>
+
+    <!-- Compiled and minified CSS - Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Compiled and minified CSS - Materialize-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript - Materialize-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" type ="text/css" href ="styles.css">
+
+    <!-- Latest compiled and minified JavaScript - Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <a class="navbar-brand">Michael Bentz</a>
+            </div>
+              <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                  <li><a href="index.html">Get To Know Me</a></li>
+                  <!-- active makes the navbar highlight to show current page -->
+                  <li class="active"><a href="#">Resume</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  <!-- dropdown menu for contact information -->
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role ="textbox">Contact<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                     <li><a tabindex="-1"><strong>Address</strong><br>
+                           2841 SW 13th Street, Apt. A203<br>
+                           Gainesville, FL 32608<br>
+                           <abbr title="Phone">P:</abbr>  (754) 202-3934</a>
+                         </li><br>
+                      <li><a tabindex="-1"><strong>Email</strong><br>
+                        <a href="mailto:#"><u class ="email">mbentz@ufl.edu</u></a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+          </div>
+        </nav>
+
+        <!-- Footer
+        ================================================== -->
+        <!-- divider to center footer -->
+        <div class="container marketing">
+          <img class="featurette-image img-responsive center-block" src="resume.png" align ="middle"><br>
+          <footer>
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p>&copy; 2015 Michael Bentz  </p>
+          </footer>
+        </div><!-- /.container -->
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
