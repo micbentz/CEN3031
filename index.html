@@ -1,0 +1,160 @@
+<!-- Michael Bentz
+    CEN3031, Personal Page
+    August 31, 2015
+    Used Bootstrap and Materialize Frameworks-->
+
+<!-- index.html contains a navbar, a centered title, a row of 3 info columns with pictures  and a footer-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <title>Michael Bentz</title>
+
+    <!-- Compiled and minified CSS - Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Compiled and minified CSS - Materialize-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript - Materialize-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" type ="text/css" href ="styles.css">
+
+    <!-- Latest compiled and minified JavaScript - Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  </head>
+
+<!-- Navigation bar
+================================================== -->
+  <body>
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <a class="navbar-brand">Michael Bentz</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <!-- unordered list with css from bootstrap -->
+              <ul class="nav navbar-nav">
+                <!-- active makes the selected navbar highlight to show current page -->
+                <li class="active"><a href="#">Get To Know Me</a></li>
+                <!-- Resume navbar links to resume.html -->
+                <li><a href="resume.html">Resume</a></li>
+              </ul>
+              <!-- navbar thats right aligned for contact info -->
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role ="textbox">Contact<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                   <li><a tabindex="-1"><strong>Address</strong><br>
+                         2841 SW 13th Street, Apt. A203<br>
+                         Gainesville, FL 32608<br>
+                         <abbr title="Phone">P:</abbr>  (754) 202-3934</a>
+                    </li><br>
+                    <li><a tabindex="-1"><strong>Email</strong><br>
+                      <a href="mailto:#"><u class ="email">mbentz@ufl.edu</u></a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      <!-- Info Columns
+      ================================================== -->
+      <div class="section no-pad-bot">
+        <div class="container">
+          <br><br>
+          <!-- Using materialize css styles for color of headers -->
+          <h1 class="header center blue-text text-darken-4">Michael Bentz</h1>
+          <h5 class ="header center grey-text">"German Filipino == Hispanic?"</h5>
+          <div class="row center">
+          </div>
+          <div class="row center">
+            <!-- Get in contact button opens default mail app -->
+            <a href="mailto:#"  id="button" class="btn-large waves-effect waves-light blue darken-3">Get In Contact</a>
+          </div>
+          <br><br>
+        </div>
+      </div>
+      <!-- container to center the following code -->
+    <div class="container marketing">
+        <div class="row">
+          <div class="col-lg-4">
+            <!-- using img-circle css from bootstrap for pictures in the info columns -->
+            <img class="img-circle" src="face.jpg" alt="Generic placeholder image" width="140" height="140">
+            <h4>About Me</h4>
+            <p>My name is Michael Bentz and I am a 5th year Computer Science Major. I transferred to UF in 2013 and have enjoyed it here ever since.</p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="img-circle" src="mobile.png" alt="Generic placeholder image" width="140" height="140">
+            <h4>Coding Interests</h4>
+            <p>I particularly enjoy mobile development. I'm familiar with the Android framework and am currently working on a personal project. I am also learning iOS development in the Fall.</p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="img-circle" src="GSC Logo.png" alt="Generic placeholder image" width="140" height="140">
+            <h4>Outside of School</h4>
+            <p>To stay sharp with the demanding coursework I enjoy unwinding with a dance or two. I joined Gator Salsa Club two years ago and now I have the privilege of serving as President.</p>
+            <!-- Audio player to demo salsa music -->
+            <audio controls>
+              	<source src="salsa.mp3" type="audio/mpeg" />
+            </audio>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+     </div><!-- /.container -->
+
+    <!-- Footer
+    ================================================== -->
+    <!-- Materialize css used for footer -->
+    <footer class="page-footer blue darken-3">
+     <div class="container">
+       <div class="row">
+         <div class="col l6 s12">
+           <h5 class="white-text">Aside</h5>
+           <p class="grey-text text-lighten-4">I am highly motivated to learn from my mistakes and successes and dive into familiar and unfamiliar challenges alike.</p>
+         </div>
+         <div class="col l3 s12">
+           <!-- header for ordered lists -->
+           <h5 class="white-text">Experience</h5>
+           <ul>
+             <!-- Ordered list to show my experiences -->
+             <li><a class="white-text">IPPD</a></li>
+             <li><a class="white-text">Mindtree</a></li>
+             <li><a class="white-text">Android</a></li>
+             <li><a class="white-text">iOS</a></li>
+           </ul>
+         </div>
+         <div class="col l3 s12">
+           <h5 class="white-text">Connect</h5>
+           <ul>
+             <!-- Ordered list of links to relevant pages -->
+             <li><a class="white-text" href="https://www.facebook.com/mike.bentz.9">Facebook</a></li>
+             <li><a class="white-text" href="https://github.com/micbentz">Github</a></li>
+             <li><a class="white-text" href="https://www.facebook.com/gatorsalsa">Gator Salsa Club</a></li>
+           </ul>
+         </div>
+       </div>
+     </div>
+     <div class="footer-copyright">
+       <div class="container">
+           <p>&copy; 2015 Michael Bentz  </p>
+       </div>
+     </div>
+   </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+
+  </body>
+</html>
