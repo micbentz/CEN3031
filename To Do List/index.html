@@ -15,15 +15,19 @@
 
     <div id="todo" class="col-xs-6 col-xs-offset-3" ng-controller="MainCtrl">
 
-        <div class="input-group">
-          <input type="text" class="form-control" placeholder="Item to add to todo list" ng-model="newItem">
-          <span class="input-group-btn">
-            <button class="btn btn-default" type="button" ng-click="addItem()">
-              Add
-              <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-            </button>
-          </span>
-        </div><!-- /input-group -->
+
+      <div class ="input-group">
+        <form ng-submit="addItem()">
+              <span class="input-group-btn">
+            <input type = "text" class="form-control" placeholder="Item to add to todo list" ng-model="newItem">
+
+              <button class = "btn btn-default " type="submit">
+                Add
+                <span class ="glyphicon glyphicon-ok" aria-hidden="true"></span>
+              </button>
+            </span>
+        </form>
+</div>
 
       <h2>My To Do List </h2>
 
